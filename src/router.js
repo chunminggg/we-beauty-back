@@ -16,7 +16,7 @@ const routers = [
 {
     path: '/home',
     meta: {
-        title: '超想去旅行'
+        title: '苏州镜面管理'
     },
     component: (resolve) => require(['./views/index.vue'], resolve),
     children: [{
