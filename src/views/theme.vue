@@ -62,8 +62,8 @@
                  _self.$Message.error('简称未填写')
                  return
             }
-             if (!_self.imageArray.length) {
-                 _self.$Message.error('图片至少上传一张')
+             if (_self.imageArray.length<2) {
+                 _self.$Message.error('图片至少上传2张')
                  return
             }
             network.uploadTheme(dict,(data)=>{
